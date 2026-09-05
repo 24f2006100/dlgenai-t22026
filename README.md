@@ -93,12 +93,3 @@ For inference, each test question is converted into five question-option pairs. 
 The trained model produces classification logits for each pair. Softmax is then applied to obtain class probabilities, and the probability of class `1` is used as the score for the corresponding answer option.
 
 The five options are sorted according to their scores, and the three highest-scoring options are selected as the final prediction.
-
-For example, if the model produces the following scores:
-
-```text
-A → 0.21
-B → 0.83
-C → 0.14
-D → 0.72
-E → 0.31
